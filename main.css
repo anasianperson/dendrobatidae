@@ -1,0 +1,65 @@
+* {
+    font-family: helvetica;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+}
+
+button {
+    background-color: #64DD17;
+    width: 100px;
+    height: 100%;
+    border: none;
+    margin: 0px;
+    float: left;
+    outline: #00C853;
+    color: black;
+}
+
+button:hover {
+    background-color: green;
+}
+
+#content {
+    background-color: #424242;
+    width: 100%;
+    min-height: calc(100vh - 50px);
+    min-height: 500px;
+    margin-top: 50px;
+    padding: 5px 0;
+}
+
+#main-content {
+    width:70%;
+    height:100%;
+    margin-left: 15%;
+    background-color:#EEE;
+}
+
+#image-wrapper {
+    width: 100%;
+    min-width: 200px;
+    height: 30%;
+    min-height: 250px;
+    background-image: url('http://farm8.staticflickr.com/7416/9462456534_ae253c37d1_b.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.info {
+    width: 100%;
+    height: 40%;
+    padding: 8px;
+    display: block;
+}
