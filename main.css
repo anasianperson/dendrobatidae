@@ -10,56 +10,83 @@ html, body {
 
 header {
     background-color: #4CAF50;
-    width: 100%;
+    width: 100vw;
     height: 50px;
     position: fixed;
     top: 0;
+    z-index: 5;
 }
 
-button {
-    background-color: #64DD17;
-    width: 100px;
+button.menu-button {
+    background-color: inherit;
+    width: 95px;
     height: 100%;
     border: none;
     margin: 0px;
     float: left;
-    outline: #00C853;
+    outline: none;
     color: black;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: green;
+button.menu-button:hover {
+    background-color: #388E3C;
+}
+
+button.menu-button:active {
+    background-color: #2E7D32;
+}
+
+.slideshow-button {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #EEE;
+    opacity: 0.5;
+    border: none;
+    outline: none;
+    transition: background-color 0.1s ease;
+}
+
+.slideshow-button:hover {
+    background-color: #BDBDBD;
 }
 
 #content {
     background-color: #424242;
     width: 100%;
-    min-height: calc(100vh - 50px);
-    min-height: 500px;
+    min-height: 100%;
+    float: left;
     margin-top: 50px;
     padding: 5px 0;
 }
 
 #main-content {
     width:70%;
-    height:100%;
     margin-left: 15%;
     background-color:#EEE;
+    float: left;
+    border-radius: 5px;
 }
 
 #image-wrapper {
-    width: 100%;
-    min-width: 200px;
+    width: calc(100% - 10px);
     height: 30%;
     min-height: 250px;
-    background-image: url('http://farm8.staticflickr.com/7416/9462456534_ae253c37d1_b.jpg');
+    background-image: url('https://farm8.staticflickr.com/7416/9462456534_ae253c37d1_b.jpg');
+    background-color: #757575;
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    border-radius: 5px 5px 0 0;
+    padding: 5px;
 }
 
 .info {
-    width: 100%;
+    width: calc(100% - 16px);
     height: 40%;
     padding: 8px;
     display: block;
+    float: left;
 }
